@@ -11,27 +11,27 @@ First, create 3 HTML Select elements for province, district and ward with name '
 <select name="ls_district"></select>
 <select name="ls_ward"></select>
 ```
-Finally, include the plugin to your document and create instance of the plugin and pass the identify of selectors to an object as parameter:
+Finally, include the plugin to your document,create instance of the plugin and pass the identify of selectors to an object as parameter:
 ```html
 <script src="vietnamlocalselector.js"></script>
 <script>
 	var localpicker = new LocalPicker({
-        province: "ls_province",
-        district: "ls_province",
-        ward: "ls_province"
-    });
+		province: "ls_province",
+		district: "ls_province",
+		ward: "ls_province"
+    	});
 </script>
 ```
 ## Options
 
 ```javascript
   var options = {
-  			/*
+  	    /*
             HTML Selector. You can pass value of name, id or class. 
             It will automatically detect exist elements for you.
             Example: 'myIdOrClass','#myId', '.myClass', 'myName'
             */
-          	province: 'ls_province',	
+            province: 'ls_province',	
             district: 'ls_district',	
             ward: 'ls_ward',			
                       
