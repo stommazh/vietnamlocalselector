@@ -52,7 +52,7 @@
         }
         try{
             let es = param =>{
-                return param.replace(/^#+/i, '');
+                return param.replace(/^#|\.+/i, '');
             };
             p = document.querySelector(`select.${es(_.options.province)}`) || document.querySelector(`select#${es(_.options.province)}`) || document.querySelector(`select[name="${es(_.options.province)}"]`) ;
             d = document.querySelector(`select.${es(_.options.district)}`) || document.querySelector(`select#${es(_.options.district)}`) || document.querySelector(`select[name="${es(_.options.district)}"]`) ;
