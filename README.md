@@ -17,8 +17,8 @@ Finally, include the plugin to your document,create instance of the plugin and p
 <script>
 	var localpicker = new LocalPicker({
 		province: "ls_province",
-		district: "ls_province",
-		ward: "ls_province"
+		district: "ls_district",
+		ward: "ls_ward"
     	});
 </script>
 ```
