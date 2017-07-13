@@ -24,7 +24,7 @@
             levelAsAttribute: true,
             levelAttributeName: "data-level",
         };
-        this.options = (JSON.parse(JSON.stringify(defaults)));
+        this.options = Object.assign({},defaults);
 
         if (arguments[0] && typeof arguments[0] === "object") {
             this.options = extendDefaults(defaults, arguments[0]);
