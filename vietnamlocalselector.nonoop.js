@@ -35,9 +35,7 @@
                     s = 'i';
             }
             try{
-                let es = param =>{
-                    return param.replace(/^#|\.+/i, '');
-                };
+                let es = src => src.replace(/^#|\.+/i, '');
                 p = document.querySelector(`select.${es(province)}`) || document.querySelector(`select#${es(province)}`) || document.querySelector(`select[name="${es(province)}"]`) ;
                 d = document.querySelector(`select.${es(district)}`) || document.querySelector(`select#${es(district)}`) || document.querySelector(`select[name="${es(district)}"]`) ;
                 w = document.querySelector(`select.${es(ward)}`) || document.querySelector(`select#${es(ward)}`) || document.querySelector(`select[name="${es(ward)}"]`);
