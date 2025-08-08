@@ -1,3 +1,5 @@
+#Deprecated / Outdated#
+See [VietnamAdministrative Units](https://github.com/stommazh/Vietnam-Administrative-Units/)
 # Vietnam local selector - JavaScript plugin
 
 *Create HTML Select element for Vietnam province, district and ward.*
